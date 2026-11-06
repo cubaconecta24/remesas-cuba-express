@@ -7,3 +7,8 @@
 .contact-number{font-weight:700;color:var(--navy)!important}
 .request input:focus,.request select:focus,.request textarea:focus{outline:2px solid #8bb8d6;outline-offset:1px}
 @media(max-width:480px){.brand{font-size:11px;gap:7px}.brand-mark{width:34px;height:34px}.site-header{padding-left:16px;padding-right:16px}.site-header nav{gap:9px}.site-header nav a{font-size:11px}}
+
+/* Identidad visual con el logotipo aportado */
+.hero-logo{display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-logo img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;border-radius:18px;box-shadow:0 22px 55px rgba(0,0,0,.22)}
+@media(max-width:760px){.hero-logo img{max-height:none;border-radius:12px}}

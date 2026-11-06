@@ -28,3 +28,7 @@ Antes de anunciar, intermediar, ofrecer o ejecutar remesas, verifica con asesor�
 
 ## Privacidad
 El formulario no guarda los datos en esta web; prepara un mensaje que el visitante puede revisar y enviar por WhatsApp. Evita solicitar datos bancarios, contraseñas o documentos de identidad mediante este formulario. Añade una política de privacidad revisada legalmente antes de realizar campañas o recoger datos personales de forma sistemática.
+
+
+## Logotipo
+La imagen de marca está en `assets/logo-remesas-cuba-express.png`. Mantén la carpeta `assets` al subir los archivos a GitHub; la página utiliza esa ruta para mostrar el logotipo y la vista previa al compartir el enlace.
