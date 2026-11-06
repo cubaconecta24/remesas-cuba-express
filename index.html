@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Remesas Cuba Express: atención informativa por WhatsApp para consultas sobre remesas a Cuba.">
+  <meta name="description" content="Remesas Cuba Express: consultas informativas por WhatsApp sobre opciones para apoyar a la familia en Cuba.">
   <meta name="theme-color" content="#082b50">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Remesas Cuba Express">
   <meta property="og:description" content="Tu familia en Cuba, más cerca. Consultas informativas por WhatsApp.">
-  <meta property="og:image" content="assets-logo-remesas-cuba-express.png">
-  <link rel="icon" type="image/png" href="assets-logo-remesas-cuba-express.png">
-  <title>Remesas Cuba Express | Tu familia más cerca</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta property="og:image" content="https://sanchezjuanantonio963-pixel.github.io/remesas-cuba-express/logo-remesas-cuba-express.png">
+  <link rel="icon" type="image/png" href="./logo-remesas-cuba-express.png">
+  <title>Remesas Cuba Express | Tu familia en Cuba, más cerca</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#" aria-label="Remesas Cuba Express, inicio">
-      <span class="brand-mark">R</span>
+    <a class="brand" href="./" aria-label="Remesas Cuba Express, inicio">
+      <span class="brand-mark" aria-hidden="true">R</span>
       <span>REMESAS CUBA <b>EXPRESS</b></span>
     </a>
     <nav aria-label="Navegación principal">
@@ -30,18 +31,27 @@
         <p class="eyebrow">ATENCIÓN INFORMATIVA POR WHATSAPP</p>
         <h1>Tu familia en Cuba, <em>más cerca.</em></h1>
         <p class="lead">¿Tienes dudas sobre opciones para apoyar a tu familia en Cuba? Escríbenos y cuéntanos qué información necesitas.</p>
-        <a class="button" href="#solicitar">Hacer una consulta <span>→</span></a>
-        <p class="fine">Atendemos consultas y solicitudes de información. Actualmente no recibimos dinero ni ejecutamos transferencias.</p>
+        <a class="button" href="#solicitar">Hacer una consulta <span aria-hidden="true">→</span></a>
+        <p class="fine">Puedes escribirnos en cualquier momento. La recepción de mensajes está disponible 24/7; la respuesta puede no ser inmediata.</p>
       </div>
-      <div class="hero-art hero-logo">
-        <img src="assets/logo-remesas-cuba-express.png" alt="Logotipo de Remesas Cuba Express con el globo terráqueo, la bandera cubana y el lema Tu familia en Cuba, más cerca.">
+
+      <div class="hero-art" aria-label="Logotipo de Remesas Cuba Express">
+        <img
+          id="brand-logo"
+          src="./logo-remesas-cuba-express.png"
+          alt="Logotipo de Remesas Cuba Express: globo terráqueo, bandera cubana y lema Tu familia en Cuba, más cerca."
+          width="1536"
+          height="931"
+          fetchpriority="high"
+          decoding="async">
+        <p id="logo-error" class="logo-error" hidden>No se ha podido cargar el logotipo. Comprueba que el archivo <strong>logo-remesas-cuba-express.png</strong> esté junto a <strong>index.html</strong> en el repositorio.</p>
       </div>
     </section>
 
     <section class="trust-strip" aria-label="Características de atención">
-      <div><span>🌍</span><b>Consultas desde cualquier país</b></div>
-      <div><span>💬</span><b>Atención por WhatsApp</b></div>
-      <div><span>🕒</span><b>Mensajes 24/7</b></div>
+      <div><span aria-hidden="true">🌍</span><b>Consultas desde cualquier país</b></div>
+      <div><span aria-hidden="true">💬</span><b>Atención por WhatsApp</b></div>
+      <div><span aria-hidden="true">🕒</span><b>Mensajes 24/7</b></div>
     </section>
 
     <section class="section" id="como-funciona">
@@ -49,23 +59,30 @@
       <h2>¿Cómo funciona la consulta?</h2>
       <div class="steps">
         <article><span>01</span><h3>Cuéntanos qué necesitas</h3><p>Indica tu país y escribe tu pregunta. No envíes datos bancarios ni documentos personales.</p></article>
-        <article><span>02</span><h3>Revisamos tu consulta</h3><p>Te responderemos con información general disponible. La recepción de mensajes está habilitada las 24 horas; la respuesta puede no ser inmediata.</p></article>
-        <article><span>03</span><h3>Infórmate antes de actuar</h3><p>Antes de realizar cualquier operación, verifica por tu cuenta que el proveedor y el servicio estén debidamente autorizados en los países correspondientes.</p></article>
+        <article><span>02</span><h3>Revisamos tu consulta</h3><p>Te responderemos con la información general que podamos ofrecer. La recepción de mensajes está habilitada las 24 horas; la respuesta puede no ser inmediata.</p></article>
+        <article><span>03</span><h3>Infórmate antes de actuar</h3><p>Antes de realizar cualquier operación, verifica que el proveedor y el servicio estén debidamente autorizados en los países correspondientes.</p></article>
       </div>
     </section>
 
     <section class="request" id="solicitar">
-      <div>
+      <div class="request-copy">
         <p class="eyebrow">EMPIEZA AQUÍ</p>
         <h2>Envíanos tu consulta</h2>
         <p>Completa estos datos básicos y se abrirá WhatsApp con un mensaje preparado. Tú decides si lo envías.</p>
         <p class="notice"><strong>Importante:</strong> Remesas Cuba Express ofrece actualmente únicamente atención informativa. No recibe fondos, no cambia divisas, no garantiza disponibilidad de servicios ni realiza entregas de dinero o mercancías.</p>
       </div>
+
       <form id="remittance-form">
-        <label>Tu nombre<input name="name" autocomplete="name" required maxlength="80" placeholder="Nombre"></label>
-        <label>País desde el que nos escribes<input name="country" autocomplete="country-name" required maxlength="80" placeholder="Ej. España, Estados Unidos..."></label>
-        <label>¿Sobre qué necesitas información?<textarea name="message" rows="4" maxlength="700" required placeholder="Escribe brevemente tu consulta"></textarea></label>
-        <button class="button" type="submit">Continuar por WhatsApp <span>→</span></button>
+        <label for="visitor-name">Tu nombre</label>
+        <input id="visitor-name" name="name" autocomplete="name" required maxlength="80" placeholder="Nombre">
+
+        <label for="visitor-country">País desde el que nos escribes</label>
+        <input id="visitor-country" name="country" autocomplete="country-name" required maxlength="80" placeholder="Ej. España, Estados Unidos...">
+
+        <label for="visitor-message">¿Sobre qué necesitas información?</label>
+        <textarea id="visitor-message" name="message" rows="4" maxlength="700" required placeholder="Escribe brevemente tu consulta"></textarea>
+
+        <button class="button" type="submit">Continuar por WhatsApp <span aria-hidden="true">→</span></button>
         <p class="form-note" id="form-note">No incluyas contraseñas, números de tarjetas, datos bancarios ni documentos de identidad.</p>
       </form>
     </section>
@@ -74,16 +91,17 @@
       <p class="eyebrow">ESTAMOS PARA ESCUCHARTE</p>
       <h2>Hablemos por WhatsApp.</h2>
       <p>Atención en español. Puedes escribirnos en cualquier momento; responderemos tan pronto como sea posible.</p>
-      <a class="button" href="https://wa.me/5358890666" target="_blank" rel="noopener noreferrer">Abrir WhatsApp <span>→</span></a>
+      <a class="button" href="https://wa.me/5358890666" target="_blank" rel="noopener noreferrer">Abrir WhatsApp <span aria-hidden="true">→</span></a>
       <p class="contact-number">WhatsApp: +53 58890666</p>
     </section>
   </main>
 
   <footer>
-    <a class="brand" href="#"><span class="brand-mark">R</span><span>REMESAS CUBA <b>EXPRESS</b></span></a>
+    <a class="brand brand-footer" href="./"><span class="brand-mark" aria-hidden="true">R</span><span>REMESAS CUBA <b>EXPRESS</b></span></a>
     <p>© <span id="year"></span> Remesas Cuba Express.</p>
     <small>Información importante: este sitio es un canal de consultas. Actualmente no presta servicios de transferencia, recepción o entrega de dinero, ni actúa como entidad financiera o agente de remesas. Cualquier servicio futuro estará sujeto a la verificación previa de licencias, autorizaciones y normas aplicables en Cuba y en los países de origen y destino. La información de esta página no constituye una oferta para contratar una transferencia.</small>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="./script.js" defer></script>
 </body>
 </html>
